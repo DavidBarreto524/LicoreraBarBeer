@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(150deg,#4e4e4e,#252525);
+    height: 100vh;
+    background-image: url(Logo.jpeg);
+}   
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    
+
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+ 
+}
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+
+form .username{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.username span::before{
+    content: '';
+    position:absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #6c3483;
+    transition: .5s;
+}
+.username input:focus ~ label,
+.username input:focus ~ label{
+    top: -5px;
+    color: #6c3483;
+}
+.username input:focus ~ span::before,
+.username input:focus ~ span::before{
+    width: 100%;
+}
+.recordar{
+    margin: -5px 0 20px 5px;
+    color: blue;
+    cursor: pointer;
+}
+.recordar:hover{
+    text-decoration: underline;
+}
+.registrarse a{
+    color: blue;
+    text-decoration: none;
+}
+
+.registrarse a:hover{
+    text-decoration: underline;
+}
+
+.button_slide {
+  color: #FFF;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #000000;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.slide_down:hover {
+  box-shadow: inset 0 100px 0 0 #000000;
+}
+
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 #000000;
+}
+
+.slide_left:hover {
+  box-shadow: inset 0 0 0 50px #000000;
+}
+
+.slide_diagonal:hover {
+  box-shadow: inset 400px 50px 0 0 #000000;
+}
+
+#outer {
+  width: 364px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
